@@ -19,18 +19,15 @@ The project is structured in folders:
 - `utils`, which contains all the function/images necessary for the site;
 
 
-## Installation
-Install the dependencies and devDependencies and start the server.
-
-```sh
-cd dillinger
-npm i
-node app
-```
+## Usage
+The website was tested using XAMPP.
 
 ## Images
-Here some images of the website
+Here some images of the website:
 ![Alt text](images/home.png?raw=true)
-![Alt text](images/even.png?raw=true)
+
+![Alt text](images/event.png?raw=true)
+
 ![Alt text](images/modifyevent.png?raw=true)
+
 ![Alt text](images/cart.png?raw=true)
