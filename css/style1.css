@@ -1,0 +1,352 @@
+body, header, h1, h2, h5, ul{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("background.png");
+    padding-top: 60px;
+    font-family: 'Tahoma', 'Segoe UI', 'Optima', 'Geneva', Verdana, sans-serif;
+}
+
+body > footer{
+    background-color: #402A46;
+    color: #EAE0D4;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Tahoma', 'Segoe UI', 'Optima', 'Geneva', Verdana, sans-serif;
+}
+
+.navbar { 
+    background-color: #402A46; 
+}
+
+.navbar a img{
+    width: 80px;
+}
+
+.navbar .navbar-nav a { 
+    color: white; 
+    font-family: 'Tahoma', 'Segoe UI', 'Optima', 'Geneva', Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.navbar .navbar-nav a.active {
+  color: #ffffff;
+}
+
+main{
+    margin: 20px 5% 0;
+}
+
+article, main > section{
+    background-color: #EAE0D4;
+    margin-bottom: 20px;
+    min-height: 400px;
+}
+
+article > p{
+    padding: 0 5%;
+    text-align: center;
+}
+
+article > header > div{
+    float: left;
+    max-height: 300px;
+    max-width: 200px;
+    margin: 2% 2% 2% 5%;
+}
+
+article > header > div > img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+article > header > h2, article > header > p{
+    padding: 0 5%;
+    font-family: 'Tahoma', 'Segoe UI', 'Optima', 'Geneva', Verdana, sans-serif;
+}
+
+article > header > p{
+    font-size: 12px;    
+}
+
+article > section{
+    padding: 0 5%;
+    font: 12px Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+article > footer{
+    padding: 20px 5% 5%;
+    text-align: right;
+}
+
+article > footer > a, 
+form ul li input[type="submit"], 
+form ul li a, 
+form#prezzo input[type="submit"],
+section#evento a#inserimento,
+.send-button{
+    padding: 10px 15px;
+    background-color:#B73B56;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Tahoma', 'Segoe UI', 'Optima', 'Geneva', Verdana, sans-serif;
+}
+
+.center {
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+article > footer > a:hover, 
+form ul li input[type="submit"]:hover, 
+form ul li a:hover,
+form#prezzo input[type="submit"]:hover,
+section#evento a#inserimento:hover,
+.send-button:hover{
+    background-color:#F77C6B;
+    color: #402A46;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form:not([id="prezzo"]){
+    padding: 20px 5%;
+}
+
+form h2, main > section > h2{
+    font-family: 'Tahoma', 'Segoe UI', 'Optima', 'Geneva', Verdana, sans-serif;
+    margin: 0 0 20px;
+}
+
+h5#prezzoBiglietto{
+    font-family: 'Tahoma', 'Segoe UI', 'Optima', 'Geneva', Verdana, sans-serif;
+    color: #B73B56;
+    font-weight: bold;
+}
+
+form ul{
+    list-style: none;
+    width: 80%;
+    margin: 0 10%;
+}
+
+form ul li{
+    margin-bottom: 20px;
+}
+
+form ul li:last-child{
+    text-align: right;
+}
+
+form ul li label{
+    display: inline-block;
+    width: 50%;
+}
+
+form ul li input:not([type="submit"]){
+    width: 50%;
+    box-sizing: border-box;
+}
+
+form ul li input[type="checkbox"]{
+    margin: 0;
+}
+
+form ul li textarea{
+    width: 100%;
+    height: 150px;
+}
+
+form ul li img{
+    width: 50px;
+}
+
+main > section{
+    padding: 20px 5%;
+}
+
+
+table td, table th{
+    border: 1px solid #000;
+    padding: 15px 5px;
+    font-family: 'Tahoma', 'Segoe UI', 'Optima', 'Geneva', Verdana, sans-serif;
+    text-align: center;
+}
+
+table img{
+    width: 35%;
+}
+
+table img[id="bidone"]{
+    width: 35%;
+}
+
+div#tabella{
+    overflow-x:auto;
+}
+
+body > footer > p{
+    font-family: 'Tahoma', 'Segoe UI', 'Optima', 'Geneva', Verdana, sans-serif;
+}
+
+.empty-cart {
+	background-color: #EAE0D4;
+	border: #B73B56 2px solid;
+	padding: 5px 10px;
+    color: #B73B56;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+	border-radius: 5px;
+    margin: 10px 0px;
+    font-family: 'Tahoma', 'Segoe UI', 'Optima', 'Geneva', Verdana, sans-serif;
+}
+
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(200, 200, 200, 0.75);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+  .modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .modal-window>div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 2rem;
+    background: #fff;
+    color: #111;
+  }
+
+  .modal-window>div p{
+    color: #888;
+  }
+  
+  .modal-window header {
+    font-weight: bold;
+    font-family: 'Tahoma', 'Segoe UI', 'Optima', 'Geneva', Verdana, sans-serif;
+  }
+  
+  .modal-close {
+    color: #aaaaaa;
+    font-size: 28px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 5%;
+    width: 70px;
+    text-decoration: none;
+    font-weight: bold;  
+  }
+  
+  .modal-close:hover {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .modal-window h1 {
+    font-family: 'Tahoma', 'Segoe UI', 'Optima', 'Geneva', Verdana, sans-serif;
+    font-size: 150%;
+    margin: 0 0 15px;
+  }
+
+  .notifica {
+    margin: 10px 5%;
+    text-align: center;
+    padding: 10px 10px 4px 10px;
+    background-color: #B73B56;
+    color: white;
+    width: 90%;
+    border-radius: 15px;
+    display: none;
+  }
+  
+  .notifica-close {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .notifica-close:hover {
+    color: black;
+  }
+  
+@media screen and (min-width:768px){
+    article{
+        float: left;
+        width: 42%;
+        padding: 1%;
+        margin: 15px 3%;
+    }
+    
+    main::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    main{
+        width: 90%;
+        margin: 20px 5% 0 5%;
+    }
+
+    #contatti{
+        width: 60%;
+        margin: 0 20% 5% 20%;
+    }
+
+    #login{
+        width: 50%;
+        margin: 0 25% 5% 25%;
+    }
+
+    #evento{
+        width: 80%;
+        margin: 0 10% 5% 10%;
+    }
+
+    #carello, #articoloform{
+        width: 80%;
+        margin: 0 10% 5% 10%;
+    }
+
+    form ul{
+        width: 80%;
+    }
+
+    table{
+        width: 80%;
+        margin: 0 10%;    
+        white-space: normal;
+    }
+}
