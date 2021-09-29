@@ -24,6 +24,7 @@ The website was tested using XAMPP.
 
 ## Images
 Here some images of the website:
+
 ![Alt text](images/home.png?raw=true)
 
 ![Alt text](images/event.png?raw=true)
